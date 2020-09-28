@@ -63,4 +63,4 @@ typedef NS_OPTIONS(NSInteger, GREYVerboseLogType) {
  * @param format The string format to be printed.
  * @param ...    The parameters to be added to the string format.
  */
-void GREYLogVerbose(NSString* format, ...);
+void GREYLogVerbose(NSString* _Nonnull format, ...);

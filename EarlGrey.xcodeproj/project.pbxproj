@@ -13,6 +13,8 @@
 		6F8818B222B86F530006932D /* GREYAssertionBlock+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8818B122B86F520006932D /* GREYAssertionBlock+Private.h */; };
 		6FDFAF5324A2D0B2008B59DF /* GREYFailureHandlerHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFAF5124A2D0B2008B59DF /* GREYFailureHandlerHelpers.m */; };
 		763D87B22513F3F1001B5731 /* GREYDistantObjectUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D87B12513F3F1001B5731 /* GREYDistantObjectUtils.m */; };
+		8AD6F69925224FBC0070A38A /* GREYAppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD6F69025224FB10070A38A /* GREYAppState.m */; };
+		8AFDC68725224DD700FB6116 /* GREYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFDC68625224DD700FB6116 /* GREYLogger.m */; };
 		A20847B422BC095B00DD3983 /* GREYTraversalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A20847B322BC095A00DD3983 /* GREYTraversalObject.m */; };
 		A277771E238FE215003E7373 /* GREYTraversalProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A277771C238FE215003E7373 /* GREYTraversalProperties.m */; };
 		FD1184D3212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1184D2212CEE72004CADC3 /* XCUIApplication+GREYEnvironment.m */; };
@@ -409,6 +411,8 @@
 		763D87B02513F3F1001B5731 /* GREYDistantObjectUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GREYDistantObjectUtils.h; path = CommonLib/DistantObject/GREYDistantObjectUtils.h; sourceTree = "<group>"; };
 		763D87B12513F3F1001B5731 /* GREYDistantObjectUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GREYDistantObjectUtils.m; path = CommonLib/DistantObject/GREYDistantObjectUtils.m; sourceTree = "<group>"; };
 		80E8CD4422AF097000CDE5C5 /* GREYElementMatcherBlock+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GREYElementMatcherBlock+Private.h"; path = "CommonLib/Matcher/GREYElementMatcherBlock+Private.h"; sourceTree = SOURCE_ROOT; };
+		8AD6F69025224FB10070A38A /* GREYAppState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GREYAppState.m; path = CommonLib/Config/GREYAppState.m; sourceTree = "<group>"; };
+		8AFDC68625224DD700FB6116 /* GREYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GREYLogger.m; path = CommonLib/GREYLogger.m; sourceTree = "<group>"; };
 		A20847AA22BC095A00DD3983 /* GREYTraversalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GREYTraversalObject.h; sourceTree = "<group>"; };
 		A20847B322BC095A00DD3983 /* GREYTraversalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GREYTraversalObject.m; sourceTree = "<group>"; };
 		A277771C238FE215003E7373 /* GREYTraversalProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GREYTraversalProperties.m; sourceTree = "<group>"; };
@@ -905,6 +909,7 @@
 				FD6239DE20F56C9400049E81 /* GREYConstants.m */,
 				FD6239D920F56C9400049E81 /* GREYDefines.h */,
 				FD6239DC20F56C9400049E81 /* GREYLogger.h */,
+				8AFDC68625224DD700FB6116 /* GREYLogger.m */,
 				FD6239DD20F56C9400049E81 /* GREYObjcRuntime.h */,
 				FD6239DB20F56C9400049E81 /* GREYObjcRuntime.m */,
 				FD6239D820F56C9400049E81 /* GREYStopwatch.h */,
@@ -952,6 +957,7 @@
 			isa = PBXGroup;
 			children = (
 				FD6239A320F56BE700049E81 /* GREYAppState.h */,
+				8AD6F69025224FB10070A38A /* GREYAppState.m */,
 				FD62399C20F56BE700049E81 /* GREYConfigKey.h */,
 				FD62399F20F56BE700049E81 /* GREYConfigKey.m */,
 				FD6239A220F56BE700049E81 /* GREYConfiguration.h */,
@@ -1809,11 +1815,13 @@
 				FD6239BC20F56C3E00049E81 /* NSError+GREYCommon.m in Sources */,
 				FD3A825721F187FD00CA3ADF /* GREYElementMatcherBlock.m in Sources */,
 				FD6239A420F56BE700049E81 /* GREYConfiguration.m in Sources */,
+				8AD6F69925224FBC0070A38A /* GREYAppState.m in Sources */,
 				FD6239BB20F56C3E00049E81 /* GREYError.m in Sources */,
 				FD1B7E3A24A2806500400025 /* GREYErrorFormatter.m in Sources */,
 				FD6239D220F56C7100049E81 /* GREYStringDescription.m in Sources */,
 				FD6239E020F56C9500049E81 /* GREYStopwatch.m in Sources */,
 				FD6239A620F56BE700049E81 /* GREYConfigKey.m in Sources */,
+				8AFDC68725224DD700FB6116 /* GREYLogger.m in Sources */,
 				FD6239BE20F56C3E00049E81 /* GREYObjectFormatter.m in Sources */,
 				FD6239AE20F56C2500049E81 /* GREYValueType.m in Sources */,
 				FD62398E20F56B7600049E81 /* UIView+GREYCommon.m in Sources */,
